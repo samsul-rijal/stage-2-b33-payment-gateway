@@ -55,6 +55,8 @@ router.get("/transactions", auth, getTransactions);
 router.post("/transaction", auth, addTransaction);
 
 // Create router for notification with POST method here ...
+router.post("/notification", notification);
+
 
 router.get("/categories", getCategories);
 router.get("/category/:id", getCategory);
